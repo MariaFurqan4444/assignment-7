@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head><title>
+    your reviews
+</title>
+</head>
+<body>
+    <center>
+        <br>
+        <table border="1" cellspacing="0" cellpadding="5">
+<tr>
+    <td style="background-color: #758ddb;">
+        <h3 align="center"> STEP 1: Account</h3>
+    </td>
+    <td style="background-color:rgb(228, 142, 199);">
+        <h3 align="center"> STEP 2: Personal</h3>
+    </td>
+    <td style="background-color: rgb(173, 128, 69);">
+        <h3 align="center"> STEP 3: Review</h3>
+        </td>
+            </tr>
+        </table>
+        <br>
+
+        <form>
+            <fieldset style="width: 60%;">
+                <legend><strong>Your Review</strong></legend>
+                <div align="left">
+                    <p>
+                        <strong>
+                            How did you hear about us?
+
+                        </strong>
+                        <select name="source">
+                            <option>Select Your Option</option>
+                            <option value="google">Google</option>
+                            <option value="facebook">Facebook</option>
+                            <option value="LinkedIn">LinkedIn</option>
+                            <option value="instagram">Instagram</option>
+                            <option value="youtube">Youtube</option>
+                            <option value="tiktok">Tiktok</option>
+                            <option value="website">Website</option>
+                            <option value="friend">Friend</option>
+                        </select>
+                    </p>
+                    <p>
+                        <strong>
+                            Would you visit again?
+                        </strong>
+                        <br>
+
+                        <input type="radio" name="visit" value="yes"><strong>Yes</strong>
+
+                        <input type="radio" name="visit" value="no"><strong>No</strong>
+                        <input type="radio" name="visit" value="maybe"><strong>Maybe</strong>
+                    </p>
+                    <p>
+                        <strong>Comments:</strong>
+                        <br>
+                        <textarea name="comeents" rows="5" cols="40"
+                            placeholder="Enter your comments here...."></textarea>
+
+                    <p>
+                        <strong> Documents:</strong>
+                        <br>
+                        <input type="file" name="file" placeholder="Choose file">
+                    </p>
+                    <p>
+                        <strong>☑ Sign me up for email updates</strong>
+                    </p>
+                    <a href="personal.html">
+                         <img width="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9p-Gvk2MvrkKOe5joMDsKav_vGTme15aL7eTTWmCGWQ&s=10"
+                            alt="back to personal details" width="165" height="50"></a>
+
+
+                    <button type="submit">
+                        <img width="50" 
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJQAAACUCAMAAABC4vDmAAAAY1BMVEX///8AAAA6OjqGhobd3d0JCQnx8fHX19eOjo7r6+uurq4cHBzU1NR3d3fGxsb4+PhsbGy4uLhaWlrOzs4TExOampokJCQrKyu/v79AQEB9fX1nZ2c0NDRPT09hYWFISEiioqL/OswoAAADl0lEQVR4nO2Z6daaMBCGgyZEFmUJu6Le/1V2ZgJqP1E4nBY47Tx/WBLMyySzEIVgGIZhGIZhGIZhGIZhGIZhGIZhGIb5/3DDKo+v9W4B6mucV6E7Ksk0beYsStY25quRkmBZQT1B8tFcp7rrU6Rxs1+AJk6Lbsj6NCjJi6l1d6ii0Un+g0TVYUcDx957o76RpGqg6W/jJSTrpn82nPB26S+vyOKXOP6PKTwpuJeuYKUeLwUB2W+qQtR5WEuQ5YAawue1h253X0tNzx2d8DlZV7jMV5TTkYOMa3+RoEOuqabnDEISe+pdIBSMJ6AFcCE0XOwEotWqleV0VI91BCftymIetCAGjz4cv6bpJTEgBiM4pLx0SraToZbYL9JS4gp0pYRrTxKdJ+OVPdNSY2dq6vpIeuA7UUo+J8tJIeoORY1S2UVDoFX0Mj4cNYQ8RdgsD+6TkT5shDsuvPgR7to+ygne0tvbOJDsJBlsPL3kfeVjhO4sjNOubRwm8Efark2k9qQX1ZONipI0BgxXjGqKMF8GZRGoIVEKE6ezF+QzTgNHr7Rp62kph/qNW0oU6H9HWFKjPSVMXgPLJDTugKgkTEoc3IqqXevaGJytKGlCH2rsY2jMeDhM8Yl6SobRQTcteP4myqNEBRbynC6p0qSmvajuB6YlfJi5WgSPyP4FCUYtj8fGHxTV5E1GxZAhUbmIqGC8RU9R4WRRkPMCoaaIEn31vvM+LfS7vaUyeFHpqID6zhOlJopK+rEPn0TdJM1anUJQ8J0Sol+hZ4uaNH0wgftzig6vBkT5prpSBAYlLdz2r06bUEKdO32TFjoRRVh3DS90uCgkBqQzLPa2dGKd4cvOEEULfVJIEMZActE1WgpdrDTa4BeItCHBmBgDY9SiD9LySzyKNzNEpfgbk4KnuKiiLJX1c1pC9BFZuC/B8+JhVb0XewrvGG4Pc0TRyxh64VFRzzTzXPS4GJ9pJqdgdKfAeXHxiesMUTbNTEvItwytoQLyieqCeyBqhxd9Qg72EbwfpmptoztYbTdDlE3IU0sXGZrwYVFXh9pm8dfSJbK1iaTSxlYxr01Tviq70mWbRd4my+Ftfjhs8hOLfPy8rhzLy8foNj/bt7nBscmtICFOGKM3tmm2ze3Fx0ZssqWN2G1uWYt1N/dvw5v7gOv3fRam9L9mlO39YWTNtb2/1hiGYRiGYRiGYRiGYRiGYRiGYRiGYf49fgGwiDIk7MR54AAAAABJRU5ErkJggg==" alt="submit button" width="165" height="50">
+                    </button>
+
+
+
+                </div>
+    </center>
+
+
+</body>
+
+</html>
